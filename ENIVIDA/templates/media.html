@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<section class="wrapper banner-wrapper">
+        <div id="flexSlider" class="flexslider">
+            <div class="inner-banner"><img src="{% static 'theme/images/banner/inner-banner.png'%}"
+                    alt="Inner Banner of Consumer Affairs" title="banner"></div>
+        </div>
+    </section>
+    <div class="wrapper" id="skipCont"></div>
+ <section id="fontSize" class="wrapper body-wrapper ">
+        <div class="bg-wrapper inner-wrapper">
+            <div class="breadcam-bg breadcam">
+                <div class="container common-container four_content">
+                    <ul>
+                        <li><a href="home.html">Home </a></li>
+                        <li class="current">/ Media Gallery</li>
+                    </ul>
+                </div>
+            </div>
+            <section id="page-head" class="wrapper headings-wrapper">
+                <div class="container common-container four_content">
+                    <h1 id="photo">Photot Gallery</h1>
+                    <hr />
+                    <div class="cards">
+
+                        <div class="card">
+                            <img src="assets/images/gallery/g1.jpeg" alt="">
+                            <label>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, saepe! 1</label>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/gallery/g2.jpeg" alt="">
+                            <label>Image 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi,
+                                quos.</label>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/gallery/g3.jpg" alt="">
+                            <label>Image 1</label>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/gallery/g4.jpg" alt="">
+                            <label>Image 1</label>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/gallery/g5.jpg" alt="">
+                            <label>Image 1</label>
+                        </div>
+                        <div class="card">
+                            <img src="assets/images/gallery/g1.jpeg" alt="">
+                            <label>Image 1</label>
+                        </div>
+                    </div>
+                    <br>
+                    <h1 id="video">Video Gallery</h1>
+                    <hr />
+                    <div class="cards">
+
+                        <div class="card">
+                            <video width="400" controls>
+                                <source
+                                    src="assets/images/gallery/Aisa Des Hai Mera - Song With Lyrics - Veer-Zaara - Madan Mohan, Javed Akhtar, Lata, Udit, Gurdas.mp4"
+                                    type="video/mp4">
+                                <source
+                                    src="assets/images/gallery/Aisa Des Hai Mera - Song With Lyrics - Veer-Zaara - Madan Mohan, Javed Akhtar, Lata, Udit, Gurdas.mp4"
+                                    type="video/ogg">
+                            </video>
+                            <label>Aisa Des Hai Mera - Song With Lyrics - Veer-Zaara</label>
+                        </div>
+                        <div class="card">
+                            <video width="400" controls>
+                                <source src="assets/images/gallery/videoplayback.mp4" type="video/mp4">
+                                <source src="assets/images/gallery/videoplayback.mp4" type="video/ogg">
+                            </video>
+                            <label>AICTE HQrs- A Panaromic Tour</label>
+                        </div>
+                        <div class="card">
+                            <video width="400" controls>
+                                <source
+                                    src="assets/images/gallery/Glimpses of AKAM- EBSB_ Visit of Students to paired States.mp4"
+                                    type="video/mp4">
+                                <source src="" type="video/ogg">
+                            </video>
+                            <label>Glimpses of AKAM- EBSB_ Visit of Students to paired States</label>
+                        </div>
+                        <div class="card">
+                            <video width="400" controls>
+                                <source
+                                    src="assets/images/gallery/NATIONAL INTER- COLLEGE CROSSWORD EXPEDITION 2022 - SEMI-FINALS & GRAND FINALE.mp4"
+                                    type="video/mp4">
+                                <source src="" type="video/ogg">
+                            </video>
+                            <label>NATIONAL INTER- COLLEGE CROSSWORD EXPEDITION 2022 - SEMI-FINALS & GRAND
+                                FINALE</label>
+                        </div>
+                        <div class="card">
+                            <video width="400" controls>
+                                <source src="assets/images/gallery/v1.mp4" type="video/mp4">
+                                <source src="" type="video/ogg">
+                            </video>
+                            <label>AICTE HQrs- A Panaromic Tour</label>
+                        </div>
+                        <div class="card">
+                            <video width="400" controls>
+                                <source src="assets/images/gallery/v1.mp4" type="video/mp4">
+                                <source src="" type="video/ogg">
+                            </video>
+                            <label>AICTE HQrs- A Panaromic Tour</label>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+            </section>
+        </div>
+    </section>
+
+{% endblock %}

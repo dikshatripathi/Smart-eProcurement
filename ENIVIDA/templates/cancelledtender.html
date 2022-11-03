@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static%}
+    <!--/.nav-wrapper-->
+
+    <section class="wrapper banner-wrapper">
+        <div id="flexSlider" class="flexslider">
+            <div class="inner-banner"><img src="{% static 'theme/images/banner/inner-banner.png'%}"
+                    alt="Inner Banner of Consumer Affairs" title="banner"></div>
+        </div>
+    </section>
+    <div class="wrapper" id="skipCont"></div>
+    <!--/#skipCont-->
+    <section id="fontSize" class="wrapper body-wrapper ">
+        <div class="bg-wrapper inner-wrapper">
+            <div class="breadcam-bg breadcam">
+                <div class="container common-container four_content">
+                    <ul>
+                        <li><a href="home.html">Home </a></li>
+                        <li class="current">/ Search a Tender</li>
+                        <li class="current">/ Active Tender</li>
+                    </ul>
+                </div>
+            </div>
+
+            <section id="tables" class="wrapper tables-wrapper">
+                <div class="container common-container four_content">
+                    <div class="scroller">
+                        <table cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <caption>The latest Tender documents issued by various Government Departments,
+                                    Directorates,
+                                    Organisations, Institutions and local bodies of Uttar Pradesh-UP are listed here.
+                                </caption>
+                                <tr>
+                                    <th align="center" valign="middle">Serial No.</th>
+                                    <th align="left" valign="middle">ePublish Date</th>
+                                    <th align="left" valign="middle">Bid Submission Closing Date</th>
+                                    <th align="left" valign="middle">Tender_Category</th>
+                                    <th align="left" valign="middle">Tender ID</th>
+                                    <th align="left" valign="middle">Organisation Chain</th>
+                                    <th align="left" valign="middle">Tender Value in ₹</th>
+                                </tr>
+
+                                {% for x in Tender %}
+
+                                <tr>
+                                    <td align="center" valign="middle">{{x.id}}</td>
+                                    <td align="left" valign="middle">{{x.Published_Date}}</td>
+                                    <td align="left" valign="middle">{{x.Bid_Submission_End_Date}}</td>
+                                    <td align="left" valign="middle">{{x.Tender_Category}}</td>
+                                    <td align="left" valign="middle">{{x.Tender_ID}}</td>
+                                    <td align="left" valign="middle">{{x.Organisation_chain}}</td>
+                                    <td align="left" valign="middle">{{x.Tender_Value}}</td>
+                                </tr>
+                                {% endfor %}
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr />
+                </div>
+            </section>
+
+{% endblock %}

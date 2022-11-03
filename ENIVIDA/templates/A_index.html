@@ -1,0 +1,40 @@
+{% extends "A.base.html" %}
+{% block content %}
+{% load static %}
+
+ <section id="fontSize" class="wrapper body-wrapper ">
+      <h2 style="display: none;">Body</h2>
+      <div class="bg-wrapper top-bg-wrapper gray-bg padding-top-bott">
+         <div class="container common-container four_content body-container top-body-container padding-top-bott2">
+            <div class="minister clearfix">
+               <div class="minister-box clearfix">
+                  <div class="minister-sub1 d-flex flex-wrap align-content-center">
+                     <div class="minister-image"><img src="{% static 'theme/images/minister2.jpg'%}" alt="central minister"
+                           title="Hon’ble Minister"></div>
+                     <div class="min-info">
+                        <h4>Chairman of AICTE</h4>
+                        <h3>Prof. Anil Dattatraya Sahasrabudhe</h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="left-block">
+
+               <h2><em>Welcome to </em><span>AICTE/Smart eProcurement</span></h2>
+               <p>An informative text section that outlines the work portfolio of the ministry and the initiatives/
+                  schemes and other useful purpose that the ministry website serves. An informative text section that
+                  outlines the work portfolio of the ministry and the initiatives/ schemes and other useful purpose that
+                  the ministry website serves.
+               </p>
+               <p>An informative text section that outlines the work portfolio of the ministry and the initiatives/
+                  schemes and other useful purpose that the ministry website serves.
+               </p>
+               <div class="view-footer"><a href="#" title="Read more about Ministry/Department"><span>Read More</span><i
+                        class="fa fa-arrow-right"></i></a></div>
+            </div>
+         </div>
+      </div>
+
+ </section>
+
+{% endblock %}

@@ -1,0 +1,162 @@
+.no_scr {
+    position: static;
+    width: 100%;
+    display: block;
+    background: #FFFF00;
+    padding: 9px;
+    border: 1px solid #cfd1d0;
+    color: red;
+	margin:0 !important;
+    font-weight: 600;
+    text-align: center;
+}
+.nav-wrapper {
+    height: auto;
+}
+.nav-wrapper ul ul {
+    position: static !important;
+}
+.nav-wrapper ul li {
+    margin: 2px;
+    float: none;
+}
+.nav-wrapper ul li a{
+    background: rgba(0,0,0,0.1);
+}
+.nav-wrapper ul ul li {
+    margin: 0px;
+    background: none;
+    list-style-type: disc;
+    display: list-item;
+    margin-left: 29px;
+    color: #fff;
+}
+.nav-wrapper ul ul li a{
+    background: none;
+}
+.nav-wrapper ul ul li a, .nav-wrapper ul ul li:first-child a{
+    padding-left: 0 !important;
+}
+.nav-wrapper ul ul {
+    width: auto;
+}
+.common-wrapper {
+    z-index: 1010;
+}
+.nav-wrapper ul ul ul {
+    left: 100%;
+    position: static !important;
+    top: 0;
+    width: 100%;
+    -webkit-box-shadow: 0px 0px;
+            box-shadow: 0px 0px;
+}
+.ico-site-search .both-search .find{display:none!important;}
+.ico-site-search .both-search .google-find{display:block!important;}
+.ico-site-search .both-search .google-find {
+    display: block!important;
+    margin-top: -12px;
+}
+.common-right ul li.ico-site-search .google-find input[type="submit"], .google-find input[type="submit"] {
+
+    top: 17px;
+}
+.main-goi-form{
+	display:none; 
+}
+.google-find{
+	position:relative;
+	max-width: 270px;
+}
+.google-find div {
+    font-size: 100%;
+}
+/*=====================*/
+.megamenu-wraper{
+height:auto;
+}
+.megamenu-wraper .main-menu * {
+   display:block !important;
+   width:100%;
+}
+.megamenu-wraper .main-menu  * {
+       display: inline-block !important;
+    width: 100%;
+    float: none;
+    height: inherit;
+    position: relative;
+    padding: 5px 10px;
+    top: 0;
+    border-right: none !important;
+    left: 0!important;
+    margin: 0 !important;
+    margin-left: 0!important;
+    
+    border-right: none;
+}
+.megamenu-wraper .main-menu  * > ul > li {
+	margin-bottom:5px  !important;
+}
+.sub-nav.col-2 ul {
+    width: 49%;
+}
+.ico-site-search .search-drop {
+    background: #aa2323;
+}
+.common-right ul li.ico-site-search .google-find input[type="submit"], .google-find input[type="submit"]{
+    width: 34px;
+    height: 36px;
+    cursor: pointer;
+    border: 0px;
+    overflow: hidden;
+    text-indent: -200px;
+    font-size: 1px;
+    background: url(../images/ico-goi-search.png) no-repeat center center #aa2323;
+    position: absolute;
+    top: 18px;
+    left: 229px;
+    padding: 5px 20px;
+    margin: 0;
+}
+.common-right ul li.ico-site-search input[type="text"], .main-goi-form input[type="text"] {
+    width: 265px;
+}
+.google-find{
+	padding:5px;
+	color:#fff;
+}
+.banner-wrapper,#galleryCarousel,#flexCarousel {
+    white-space: nowrap;
+    overflow: auto;
+}
+.flexslider .slides > li {
+    display: inline-block;
+    -webkit-backface-visibility: visible;
+}
+.megamenu-wraper .main-menu  * > ul > li.steel-home a.active, .megamenu-wraper .main-menu  * > ul > li.steel-home:hover a {
+	background-image:none;
+	padding:10px;
+}
+.megamenu-wraper .main-menu  * > ul > li a:hover, .megamenu-wraper .main-menu  * > ul > li .nolink:hover {
+	background: #143956;
+}
+.megamenu-wraper .main-menu  * > ul > li .nolink{
+	font-weight:900 !important;
+}
+.megamenu-wraper .main-menu  * a.nolink{font-weight:900; background:none;}
+.megamenu-wraper .main-menu  li a * {
+	width:auto !important;
+	display:inline-block !important;
+}
+.megamenu-wraper .main-menu * .responsive-toggle {
+	display:none  !important;
+}
+.google-find label{
+	display:inline-block;
+	vertical-align: top;
+}
+.tb-megamenu-submenu {
+	width:auto !important;
+}
+/*=====================*/
+.megamenu-wraper .main-menu * ul ul >li >span.nolink {margin-left:15px !important; margin-top:10px !important; cursor:default;}

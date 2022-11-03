@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static%}
+    <!--/.nav-wrapper-->
+    <section class="wrapper banner-wrapper">
+        <div id="flexSlider" class="flexslider">
+            <div class="inner-banner"><img src="{% static 'theme/images/banner/inner-banner.png'%}"
+                    alt="Inner Banner of Consumer Affairs" title="banner"></div>
+        </div>
+    </section>
+    <div class="wrapper" id="skipCont"></div>
+    <!--/#skipCont-->
+    <section id="fontSize" class="wrapper body-wrapper ">
+        <div class="bg-wrapper inner-wrapper">
+            <div class="breadcam-bg breadcam">
+                <div class="container common-container four_content">
+                    <ul>
+                        <li><a href="/">Home </a></li>
+                        <li class="current">Login</li>
+                    </ul>
+                </div>
+            </div>
+            <section id="page-head" class="wrapper headings-wrapper">
+                <div class="container common-container four_content">
+                    <h1>AdminLogin</h1>
+                    <hr />
+                </div>
+            </section>
+            <!--/#page-head-->
+            <section id="paragraph" class="wrapper paragraph-wrapper">
+                <div class="container common-container four_content">
+                    <div class="form-container">
+                        <headers>Admin Signup</headers>
+                        <form action="/adminsignup" method="post">
+                            {% csrf_token %}
+                            {% if error %}
+
+                                 <div class="alert" role="alert">
+                                          {{error}}
+                                 </div>
+                                 {% endif %}
+                            <div class="form first">
+                                <div class="details personal">
+
+                                    <div class="fields">
+
+                                        <div class="input-field">
+                              <label>Name<span class="imp">*</span></label>
+                              <input type="text" id="Name" name="AName" placeholder="AName"
+                                 required>
+                           </div>
+
+                                         <div class="input-field">
+                              <label>Unique ID<span class="imp">*</span></label>
+                              <input type="text" id="UID" name="AUID" placeholder="AUID"
+                                 required>
+                           </div>
+
+                                        <div class="input-field">
+                                            <label>Corresponding Email<span class="imp">*</span></label>
+                                            <input type="text" id="email" name="AEmail" placeholder="Corresponding Email"
+                                                required>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <label>Password<span class="imp">*</span></label>
+                                            <input type="password" id="password" name="APassword" minlength="8" placeholder="Password"
+                                                required>
+                                        </div>
+
+                                        <div class="input-field">
+                              <label>Mobile No.<span class="imp">*</span></label>
+                              <input type="number" id="Mobile" name="AMobile" placeholder="Mobile No" required>
+                           </div>
+
+                                        <div class="input-field">
+                                            <a href="generatepass.html">Generate/Forgot Password?</a>
+                                         </div>
+                                    </div>
+                                </div>
+
+                                <div class="buttons">
+                                    <input type="reset" value="RESET" class="button">
+                                    <input type="submit" value="LOGIN" class="button">
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                </form>
+        </div>
+        <hr />
+        </div>
+    </section>
+
+  {% endblock %}

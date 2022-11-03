@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% block content %}
+
+  {% load static%}
+   <!--/.nav-wrapper-->
+   <section class="wrapper banner-wrapper">
+      <div id="flexSlider" class="flexslider">
+         <div class="inner-banner"><img src="{% static 'theme/images/banner/inner-banner.png'%}"
+               alt="Inner Banner of Consumer Affairs" title="banner"></div>
+      </div>
+   </section>
+   <div class="wrapper" id="skipCont"></div>
+   <!--/#skipCont-->
+   <section id="fontSize" class="wrapper body-wrapper ">
+      <div class="bg-wrapper inner-wrapper">
+         <div class="breadcam-bg breadcam">
+            <div class="container common-container four_content">
+               <ul>
+                  <li><a href="/">Home </a></li>
+                  <li class="current">Enrollment</li>
+               </ul>
+            </div>
+         </div>
+         <section id="page-head" class="wrapper headings-wrapper">
+            <div class="container common-container four_content">
+               <h1>Online Enrollment</h1>
+               <hr />
+            </div>
+         </section>
+         <!--/#page-head-->
+         <section id="paragraph" class="wrapper paragraph-wrapper">
+            <div class="container common-container four_content">
+               <div class="form-container">
+
+
+                  <headers>Enrollment</headers>
+
+
+
+                  <form action="/signup" method="POST">
+                     {% csrf_token %}
+
+                     {% if emailerror %}
+
+                     <div class="alert" role="alert">
+                              {{emailerror}}
+                     </div>
+                     {% endif %}
+                     <div class="details personal">
+                        <span class="title">Personal Details</span>
+
+                        <div class="fields">
+
+
+                           <div class="input-field">
+                              <label>Name<span class="imp">*</span></label>
+                              <input type="text" id="Bidder_name" name="Name" placeholder="Name" required>
+                           </div>
+                           <div class="input-field">
+                              <label>Corresponding Email<span class="imp">*</span></label>
+                              <input type="text" id="Bidder_email" name="Email" placeholder="Corresponding Email" required>
+                           </div>
+
+
+                           <div class="input-field">
+                              <label>Mobile No.<span class="imp">*</span></label>
+                              <input type="number" id="Bidder_Mobile" name="Mobile" placeholder="Mobile No" required>
+                           </div>
+                           <div class="input-field">
+                              <label>Password<span class="imp">*</span></label>
+                              <input type="password" id="Password" name="Password" minlength="8" placeholder="Password"
+                                                required>
+                                        </div>
+
+                        </div>
+                     </div>
+
+                     <div class="details personal">
+                        <span class="title">Company Details</span>
+                        <div class="fields">
+                           <div class="input-field">
+                              <label>Company/Licence Holder Name<span class="imp">*</span></label>
+                              <input type="text" id="Company_Name" name="Company_Name" placeholder="Licence Number" required>
+                           </div>
+
+                           <div class="input-field">
+                              <label>Registration Number<span class="imp">*</span></label>
+                              <input type="text" id="Registration_Number" name="Registration_Number" placeholder="Register Number" required>
+                           </div>
+
+                           <div class="input-field">
+                              <label>Registered Address<span class="imp">*</span></label>
+                              <input type="text" id="Registered_Address" name="Registered_Address" placeholder="Registered Address"
+                                 required>
+                           </div>
+
+                           <div class="input-field">
+                              <label>Name of Partners/Directorss<span class="imp">*</span></label>
+                              <input type="text" id="Partners_or_Directors" name="Partners_or_Directors" placeholder="Name of Partener" required>
+                           </div>
+
+                           <div class="input-field">
+                              <label>City<span class="imp">*</span></label>
+                              <input type="text" id="City" name="City" placeholder="City" required>
+                           </div>
+
+                           <div class="input-field">
+                              <label>State<span class="imp">*</span></label>
+                              <input type="text" id="State" name="State" placeholder="State" required>
+                           </div>
+
+                           <div class="input-field">
+                              <label>Postal Code<span class="imp">*</span></label>
+                              <input type="number" id="Postal_Code" name="Postal_Code" placeholder="Postal Code" minlength="6"
+                                 maxlength="6" required>
+                           </div>
+
+                           <div class="input-field">
+                              <label>PAN/TAN Number<span class="imp">*</span></label>
+                              <input type="text" id="PAN_TAN_Number" name="PAN_TAN_Number" placeholder="PAN/TAN Number" minlength="10"
+                                 maxlength="10" required>
+                           </div>
+
+                           <div class="input-field">
+                              <label>Estd_Year<span class="imp">*</span></label>
+                              <input type="number" id="Estd_Year" name="Estd_Year" placeholder="Postal Code" minlength="6"
+                                 maxlength="4" required>
+                           </div>
+
+<!--Cutout 2-->
+
+                           <div class="input-field">
+                              <label>Nature of Business<span class="imp">*</span></label>
+                              <input type="text" id="Nature_of_Business" name="Nature_of_Business" placeholder="Nature of Business"
+                                 required>
+                           </div>
+
+                           <div class="input-field">
+                              <label>Legal Status<span class="imp">*</span></label>
+                              <input type="text" id="Legel_Status" name="Legel_Status" placeholder="Nature of Business"
+                                 required>
+                           </div>
+
+ <!--cutout 3-->
+
+
+                        <div class="buttons">
+                           <input type="reset" value="RESET" class="button">
+                           <input type="submit" value="SUBMIT" class="button">
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <hr />
+            </div>
+         </section>
+
+          {% endblock %}

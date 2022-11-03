@@ -1,0 +1,99 @@
+{% extends "U.base.html" %}
+{% block content %}
+{% load static%}
+    <!--/.nav-wrapper-->
+    <section class="wrapper banner-wrapper">
+        <div id="flexSlider" class="flexslider">
+            <div class="inner-banner"><img src="{% static 'theme/images/banner/inner-banner.png'%}"
+                    alt="Inner Banner of Consumer Affairs" title="banner"></div>
+        </div>
+    </section>
+    <div class="wrapper" id="skipCont"></div>
+    <!--/#skipCont-->
+    <section id="fontSize" class="wrapper body-wrapper ">
+        <div class="bg-wrapper inner-wrapper">
+            <div class="breadcam-bg breadcam">
+                <div class="container common-container four_content">
+                    <ul>
+                        <li><a href="home.html">Home </a></li>
+                        <li class="current">/ Bidder Service</li>
+                        <li class="current">/ File Tender</li>
+                    </ul>
+                </div>
+            </div>
+            <section id="page-head" class="wrapper headings-wrapper">
+                <div class="container common-container four_content">
+                    <h1>File Tender</h1>
+                    <hr />
+                </div>
+            </section>
+            <!--/#page-head-->
+            <section id="paragraph" class="wrapper paragraph-wrapper">
+                <div class="container common-container four_content">
+                    <div class="form-container">
+                        <headers>File Tender</headers>
+                        <form action="/filetender" method="POST">
+                     {% csrf_token %}
+
+                            <div class="details">
+                                <span class="title">Basic Details</span>
+                                    <div class="fields">
+                                        <div class="input-field">
+                                            <label>Name<span class="imp">*</span></label>
+                                            <input type="text" id="Biddername" name="Biddername" placeholder="Name" required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>Bid ID<span class="imp">*</span></label>
+                                            <input type="text" id="Bid_ID" name="Bid_ID" placeholder="Bid Id" required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>Bid Type<span class="imp">*</span></label>
+                                            <input type="text" id="Bid_Type" name="Bid_Type" placeholder="Bid Type" required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>Bid Category<span class="imp">*</span></label>
+                                            <input type="text" id="Bid_Cat" name="Bid_Category" placeholder="Bid Category" required>
+                                        </div>
+                                        <div class="input-field">
+                                          <label>Total Projects Worked<span class="imp">*</span></label>
+                                          <input type="number" id="Total_Projects_Worked" name="Total_Projects_Worked" placeholder="Total Projects Worked">
+                                       </div>
+                                        <div class="input-field">
+                                          <label>Total Success Projects<span class="imp">*</span></label>
+                                          <input type="number" id="Total_Success_Projects" name="Total_Success_Projects" placeholder="Total Success Projects">
+                                       </div>
+                                        <div class="input-field">
+                                          <label>Organization Size<span class="imp">*</span></label>
+                                          <input type="number" id="Organization_size" name="Organization_Size" placeholder="Organization Size">
+                                       </div>
+                                        <div class="input-field">
+                                          <label>Organization Establised Year<span class="imp">*</span></label>
+                                          <input type="text" name="orgy" placeholder="Organization Establised Year">
+                                       </div>
+                                        <div class="input-field">
+                                          <label>Value of Last Project<span class="imp">*</span></label>
+                                          <input type="text" name="Value_of_Last_Project" placeholder="Value_of_Last_Project">
+                                       </div>
+                                        <div class="input-field">
+                                          <label>Proposed Cost of Project<span class="imp">*</span></label>
+                                          <input type="number"  name="Proposed_Cost_of_Project" placeholder="Proposed Cost of Project">
+                                       </div>
+
+
+                                    </div>
+
+                                    <div class="buttons">
+                                        <input type="reset" value="RESET" class="button">
+                                        <input type="submit" value="ADD TENDER" class="button">
+                                    </div>
+
+
+
+                                    </div>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                </div>
+            </section>
+           {% endblock %}

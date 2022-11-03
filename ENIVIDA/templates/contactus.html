@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<section class="wrapper banner-wrapper">
+        <div id="flexSlider" class="flexslider">
+            <div class="inner-banner"><img src="{% static 'theme/images/banner/inner-banner.png'%}"
+                    alt="Inner Banner of Consumer Affairs" title="banner"></div>
+        </div>
+    </section>
+    <div class="wrapper" id="skipCont"></div>
+   <section id="fontSize" class="wrapper body-wrapper ">
+      <div class="bg-wrapper inner-wrapper">
+         <div class="breadcam-bg breadcam">
+            <div class="container common-container four_content">
+               <ul>
+                  <li><a href="home.html">Home </a></li>
+                  <li class="current">/ Contact us</li>
+               </ul>
+            </div>
+         </div>
+         <section id="page-head" class="wrapper headings-wrapper">
+            <div class="container common-container four_content">
+               <h2>Contact us</h2>
+               <hr />
+            </div>
+         </section>
+         <!--/#page-head-->
+         <section id="paragraph" class="wrapper paragraph-wrapper">
+            <div class="container common-container four_content">
+               <p>This is the Official portal of All India Council for Technical Education designed, developed and
+                  hosted by <a href="#"><strong>Hexocrats</strong></a> and managed by <a
+                     href=""><strong>AICTE</strong></a></p>
+               <p>The objective behind the Portal is to provide a single window access to the information and services
+                  being provided by the All India Council for Technical Education for bidder/tenderer and other
+                  stakeholders. The content of this Portal is managed centrally by the AICTE Content Management Team
+                  from the All India Council for Technical Education.</p>
+               <hr />
+               <div class="align-rt">
+                  <h3><strong>Address:</strong></h3>
+                  <p>Nelson Mandela Marg <br>Vasant Kunj, New Delhi-110070 <br>Phone: 011-26131576-78,80, 29581000. </p>
+                  <p>Description of the sub-heading 1 goes here. An informative text section that outlines the work
+                     portfolio of the ministry and the initiatives/ schemes and other useful purpose that the ministry
+                     website serves.</p>
+                  <a href="#" class="more">View More</a>
+               </div>
+            </div>
+         </section>
+
+         <section id="tables" class="wrapper tables-wrapper">
+            <div class="container common-container four_content">
+               <div class="scroller">
+                  <table cellspacing="0" cellpadding="0">
+                     <tbody>
+                        <caption>Department Official</caption>
+                        <tr>
+                           <th align="center" valign="middle">Serial No.</th>
+                           <th align="left" valign="middle">NAME</th>
+                           <th align="left" valign="middle">DESIGNATION</th>
+                           <th align="left" valign="middle">TEL NO.(O)</th>
+                           <th align="left" valign="middle">TEL NO.(R)</th>
+                           <th align="left" valign="middle">Email Address</th>
+                           <th align="left" valign="middle">OFFICE ADDRESS</th>
+                        </tr>
+                        <tr>
+                           <td align="center" valign="middle">1</td>
+                           <td align="left" valign="middle">Mr. ABC </td>
+                           <td align="left" valign="middle">Director</td>
+                           <td align="left" valign="middle">12345678</td>
+                           <td align="left" valign="middle">87654321</td>
+                           <td align="left" valign="middle">abc@example.com</td>
+                           <td align="left" valign="middle">New Delhi</td>
+                        </tr>
+                        <tr>
+                           <td align="center" valign="middle">2</td>
+                           <td align="left" valign="middle">Mr. XYZ</td>
+                           <td align="left" valign="middle">Sub-Director</td>
+                           <td align="left" valign="middle">12345678</td>
+                           <td align="left" valign="middle">87654321</td>
+                           <td align="left" valign="middle">subdir@example.com</td>
+                           <td align="left" valign="middle">New Delhi</td>
+                        </tr>
+                        <tr>
+                           <td align="center" valign="middle">3</td>
+                           <td align="left" valign="middle">Dr. SPDF</td>
+                           <td align="left" valign="middle">Advisor</td>
+                           <td align="left" valign="middle">12345678</td>
+                           <td align="left" valign="middle">87654321</td>
+                           <td align="left" valign="middle">advisor@example.com</td>
+                           <td align="left" valign="middle">New Delhi</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <hr />
+            </div>
+         </section>
+      </div>
+   </section>
+
+{% endblock %}

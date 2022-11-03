@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<section class="wrapper banner-wrapper">
+        <div id="flexSlider" class="flexslider">
+            <div class="inner-banner"><img src="{% static 'theme/images/banner/inner-banner.png'%}"
+                    alt="Inner Banner of Consumer Affairs" title="banner"></div>
+        </div>
+    </section>
+    <div class="wrapper" id="skipCont"></div>
+      <!--/.nav-wrapper-->
+   <section id="fontSize" class="wrapper body-wrapper ">
+      <div class="bg-wrapper inner-wrapper">
+         <div class="breadcam-bg breadcam">
+            <div class="container common-container four_content">
+               <ul>
+                  <li><a href="home.html">Home </a></li>
+                  <li class="current">/ About us</li>
+               </ul>
+            </div>
+         </div>
+         <section id="page-head" class="wrapper headings-wrapper">
+            <div class="container common-container four_content">
+               <h1>About Us</h1>
+               <hr />
+            </div>
+         </section>
+         <!--/#page-head-->
+         <section id="paragraph" class="wrapper paragraph-wrapper">
+            <div class="container common-container four_content">
+               <p>Smart eTender(SeT) is an online solution to conduct all stages of a tender process. SeT converts
+                  tedious procurement process into an economical, transparent and more secure system.</p>
+               <div class="align-rt">
+                  <h3>Our Vision</h3>
+                  <hr>
+                  <p>To be the most efficient and smart automate portal for AICTE eprocurement. A portal that will make
+                     the tender process, innovative and easy to use and access.</p>
+                  <h3>Our Mission</h3>
+                  <hr>
+                  <p>To provide consistent and intelligent tender lists. To automate the processofo choosing best and
+                     suitable tenderer/bidder. To make the approval process easy and smart.</p>
+               </div>
+            </div>
+         </section>
+         <!--/#paragraph-->
+         <section id="list" class="wrapper list-wrapper">
+            <div class="container common-container four_content">
+               <h2><i class="fa fa-arrow-right"></i>Benefits of Smart eTender (SeT)</h2>
+               <br>
+               <div class="list list-circle">
+                  <h4><strong>For Tender Inviting Authorities (TIA)</strong></h4>
+                  <ul class="clearfix">
+                     <li>Easy to create and publish tender</li>
+                     <li>Approvals updated at each stage</li>
+                     <li>Fast and efficient process</li>
+                     <li>Helps to choose the best bidder</li>
+                     <li>Reduce the tender approvals time</li>
+                  </ul>
+               </div>
+               <hr />
+               <div class="list list-bullet">
+                  <h4><strong>For Bidders</strong></h4>
+                  <ul class="clearfix">
+                     <li>Information available on 24x7</li>
+                     <li>Automated system - cuts down on logistical & stationary cost</li>
+                     <li>Bidder gets better access to all tenders</li>
+                     <li>SeT has brought in confidence among the bidders as being fair & transparent</li>
+                  </ul>
+               </div>
+               <hr />
+            </div>
+         </section>
+      </div>
+   </section>      <!--/.body-wrapper-->
+
+   {% endblock %}

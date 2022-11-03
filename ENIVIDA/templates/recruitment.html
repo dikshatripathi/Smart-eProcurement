@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+<section class="wrapper banner-wrapper">
+        <div id="flexSlider" class="flexslider">
+            <div class="inner-banner"><img src="{% static 'theme/images/banner/inner-banner.png'%}"
+                    alt="Inner Banner of Consumer Affairs" title="banner"></div>
+        </div>
+</section>
+<div class="wrapper" id="skipCont"></div>
+<section id="fontSize" class="wrapper body-wrapper ">
+        <div class="bg-wrapper inner-wrapper">
+            <div class="breadcam-bg breadcam">
+                <div class="container common-container four_content">
+                    <ul>
+                        <li><a href="home.html">Home </a></li>
+                        <li class="current">/ Recruitment</li>
+                    </ul>
+                </div>
+            </div>
+            <section id="page-head" class="wrapper headings-wrapper">
+                <div class="container common-container four_content">
+                    <h1>Recruitment</h1>
+                    <hr />
+                </div>
+            </section>
+            <!--/#article-->
+            <section id="tables" class="wrapper tables-wrapper">
+                <div class="container common-container four_content">
+                    <div class="scroller">
+                        <table cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <caption>Recruitments</caption>
+                                <tr>
+                                    <th align="center" valign="middle">Serial No.</th>
+                                    <th align="left" valign="middle">Name</th>
+                                    <th align="left" valign="middle">Date</th>
+                                    <th align="left" valign="middle">Deadline</th>
+                                    <th align="left" valign="middle">Notice</th>
+                                    <th align="center" valign="middle">Application</th>
+                                </tr>
+                                <tr>
+                                    <td align="center" valign="middle">1</td>
+                                    <td align="left" valign="middle">Online application for the post of consultant (retired) in AICTE</td>
+                                    <td align="left" valign="middle">15/08/2022</td>
+                                    <td align="left" valign="middle">15/09/2022</td>
+                                    <td align="left" valign="middle"><a href="#"> Attachment </a></td>
+                                    <td align="center" valign="middle"> <a href="#">Apply Online</a> </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" valign="middle">2</td>
+                                    <td align="left" valign="middle">Applications invited from distinguished or renowned persons in the field of technical education for the post of Chairman,AICTE</td>
+                                    <td align="left" valign="middle">15/08/2022</td>
+                                    <td align="left" valign="middle">15/09/2022</td>
+                                    <td align="left" valign="middle"><a href="#"> Attachment </a></td>
+                                    <td align="center" valign="middle"> <a href="#">Apply Online</a> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr />
+                </div>
+            </section>
+        </div>
+    </section>
+{% endblock %}

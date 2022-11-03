@@ -1,0 +1,299 @@
+@charset "utf-8";
+body {
+	background:#000;
+	color:#fff;
+}
+body a, .footer-bottom-wrapper a,
+body .nav-wrapper ul li a,
+.form-container{
+	color:#ffff00;
+}
+.top-wrapper, .body-wrapper {
+	background:#000;
+}
+.header-wrapper,.common-wrapper {
+    border-bottom: 1px solid #333;
+    background: #000;
+}
+.video-icon {
+    background: #333;
+}
+.common-right ul li ul li {
+    border-left: 0px solid #444;
+    border-top: 1px solid #444;
+}
+.common-wrapper{background:#272727;}
+.toggle-nav-bar .menu-icon {
+	background:url(../images/toggle-bar-light.png) no-repeat;
+}
+
+.nav-wrapper {
+	background:#000;
+}
+
+.top-left a span {
+	background:url(../images/ico-link-light.png) no-repeat;
+}
+.logo a {
+	color:#fff;
+}
+.common-left ul li span {
+    color: #ff0;
+}
+.footer-top-wrapper {
+	background:#000;
+	border-top:1px solid #fff;
+}
+.footer-bottom-wrapper {
+	background-color:#000;
+	color:#fff;
+}
+.nav-wrapper ul li {
+	border-left:1px solid #3b3b3b;
+}
+.nav-wrapper ul ul li {
+	border-bottom:1px solid #666;
+}
+.nav-wrapper ul ul {
+	background:#3b3b3b;
+}
+.nav-wrapper ul li:hover a, .nav-wrapper ul li.hover a, .nav-wrapper ul li.active a {
+	background:#3b3b3b;
+}
+.nav-wrapper ul ul li.active a, .nav-wrapper ul ul li.hover a, .nav-wrapper ul ul li a:hover {
+	background:#1a1a1a;
+}
+.bttn {
+	background:#000;
+	border:1px solid #fff;
+	padding:4px 9px;
+}
+.bttn:hover {
+	background:#000;
+	color:#fff;
+}
+.inp-search {
+	background:#000;
+	border:1px solid #fff;
+	color:#fff;
+}
+.bttn-search {
+	background-color:#303030;
+}
+.lan select, .ft-lan select {
+	background:#000;
+	color:#fff;
+	border:1px solid #fff;
+}
+
+.common-right ul li a{opacity:1 !important;}
+.common-right ul li.ico-skip a{background:url(../images/ico-skip-y.png) no-repeat;}
+.common-right ul li.ico-accessibility a{/*background:url(../images/ico-accessibility-y.png) no-repeat;*/}
+.common-right ul li.ico-social a{background:url(../images/ico-social-y.png) no-repeat;}
+.common-right ul li.ico-login a{background:url(../images/ico-login-y.png) no-repeat;}
+.common-right ul li.ico-site-search a{background:url(../images/ico-site-search-y.png) no-repeat;}
+.common-right ul li.ico-sitemap a{background:url(../images/ico-sitemap-y.png) no-repeat;}
+.common-left ul li.ministry{color:#fff;}
+
+
+ @media all and (max-width : 940px) {
+#nav li{background:#3B3B3B;}
+.nav-wrapper ul li.open ul li a {background:#454545 !important;}
+.nav-wrapper ul li.open ul li:hover a {
+background:#353535 !important;
+}
+
+ .nav-wrapper ul li:hover a {
+background:#212121 !important;
+}
+.nav-wrapper ul li.open ul li a{color:#ffff00 !important;}
+}
+
+.common-right ul li.ico-accessibility ul li a {
+  color: #ffff00;
+  background:#333;
+  
+}
+.four_content .common-right {
+    border-top: 1px solid #333;
+}
+.common-right ul li {
+    border-left: 1px solid #090808;
+}
+.common-left ul li.ministry {
+    border-left: 1px solid #333;
+}
+.common-right ul li.ico-accessibility ul li a.light{background:#eeeeee; color:#000 !important;}
+.main-menu a.btn-more, .main-menu a.btn-more:focus, .main-menu a.btn-more:hover, .main-menu a.btn-more.hover {
+    background: #000 !important;
+}
+.main-menu a.btn-more.opened, .main-menu a.btn-more.opened:hover, .main-menu a.btn-more.opened:focus {
+	background: #000 url(../images/close.png) no-repeat center center !important;
+}
+
+.sw-logo{display:inline-block;}
+.main-menu{border-bottom:1px solid #111;}
+
+a:focus{outline:1px dotted #fff !important;}
+.common-left ul li.gov-india a:hover
+{color:#ffff00 !important;}
+.common-left ul li.gov-india a:focus
+{color:#ffff00 !important;}
+.common-left a{display:block;}
+.common-left a:focus{color:#ffff00 !important;}
+/* shivani*/
+
+ body .nav-wrapper ul li:hover a, body .nav-wrapper ul li.hover a, body .nav-wrapper ul li.active a{
+	color:#ffff00
+}
+.header-container .logo a,
+.common-container .common-left ul li.ministry{
+	color:#ffff00
+}
+.body-left-container .news-block h3,
+footer .footer-top-wrapper ul li a{color:#ffff00;}
+.region-home-content #quicktabs-home_content_hindi ul.quicktabs-tabs.quicktabs-style-zen{height:50px;}
+#cmf-analytics .c3 path, #cmf-analytics .c3 line{stroke:#ffff00;}
+#cmf-analytics{
+	background:#fff;
+}
+
+
+.resp-tabs-list li a {
+	background: #5a5a5a;
+}
+.resp-tabs-list li.resp-tab-active a {
+	background: #333;
+}
+.resp-tabs-list li a:hover, .resp-tabs-list li:hover a {
+    background: #333;
+}
+
+
+.skiptranslate .gtflag[title="Hindi"]{
+	background-image:url("../images/hindi.png");
+	background-position:0 -38px!important;
+	transition:none;
+}
+.skiptranslate .gtflag[title="Hindi"]:hover{
+	background-image:url("../images/hindi.png");
+	background-position:0 -38px!important;
+	transition:none;
+}
+.skiptranslate .gtflag[title="English"]{
+	background-image:url("../images/english.png");
+	background-position:0 -37px!important;
+	transition:none;
+}
+.skiptranslate .gtflag[title="English"]:hover{
+	background-image:url("../images/english.png");
+	background-position:0 -37px!important;
+	transition:none;
+}
+
+.flex-direction-nav a:before {
+    color: #ffff00;
+}
+.flex-control-paging li a {
+    width: 11px;
+    height: 11px;
+    display: block;
+	background: #666666;
+    border: 1px solid #666666;
+}
+.flex-control-paging li a.flex-active {
+    background: #494646;
+    border: 1px solid #494646;
+}
+
+.common-right ul li.ico-skip a {
+	background-position:-124px -61px !important;
+}
+.common-right ul li.ico-accessibility a {
+	background-position: 7px -27px !important;
+}
+.common-right ul li.ico-social a {
+	background-position: -28px -61px !important;
+}
+.common-right ul li.ico-login a {
+	background-image:url(../images/ico-login-y.png);
+}
+.common-right ul li.ico-site-search a {
+	background-position:-59px -61px !important;
+}
+.common-right ul li.ico-sitemap a {
+	background-position:-90px -61px !important;
+}
+.flex-pauseplay {
+    background: #000;
+}   
+.flex-pauseplay a {
+    color: #f4f4f4 !important;
+}
+tr:nth-of-type(2n+1) {
+    background: #1b1b1b;
+}
+.common-right ul li ul {
+    background: #222;
+}
+.common-right ul li.ico-accessibility ul,
+.common-right ul li.ico-social ul, .common-right ul li.hover a, .common-right ul li.hover a:hover{
+    background: #222;
+}
+.gray-bg, .banner-wrapper .flex-control-nav {
+    background: #fff;
+}
+.banner-wrapper .flex-control-nav li {
+    background: #fff;
+}
+.wrapper.home-banner.tab-section, .gray-bg .view-footer a i.fa.fa-arrow-right, .gray-bg .view-footer span{
+	background: #272727;
+}
+.left-block h2, .left-block h2 span, .minister .min-info h3{
+	color: #fff;
+}
+.bg-wrapper h2 em:after{
+	content: " ";
+    border-bottom: 1px solid #fff;
+}
+.banner-wrapper .flex-control-nav:after{
+	content: "";
+	border-bottom: 41px solid #fff;
+}
+.list i.fa.fa-arrow-right{
+	color: #fff;
+}
+#scroll:hover{
+	background-color: #4b4b4b;
+}
+#scroll{
+	background-color: #000;
+}
+.banner-box.banner-box-1, .banner-box.banner-box-2, .left-block .left-col-2:nth-child(1) h2:before,
+.left-block .left-col-2:nth-child(2) h2:before, .video-wrapper>video{
+	filter: grayscale(100%);
+}
+.wrapper.home-banner .left-block .view-footer a span:hover {
+    text-transform: lowercase;
+	opacity: 0.7;
+	color: #ff0;
+}
+.gallery-area a:hover, .video-heading a:hover {
+	background: #898989;	
+    color: #000 !important;
+}
+.main-menu>ul>li:nth-child(1) a.home{
+	border-bottom: 2px solid #ff0;
+}
+.main-menu{
+	border-bottom: 0px;
+}
+.wrapper.home-banner{
+	background: #201f1f;
+}
+.resp-tab-content i.fa.fa-file-pdf-o{	
+	color: #dddd08;
+}
+.video-heading a{
+	background: #323232;
+}

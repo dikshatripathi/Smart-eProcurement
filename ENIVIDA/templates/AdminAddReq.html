@@ -1,0 +1,86 @@
+{% extends "A.base.html" %}
+{% block content %}
+{% load static%}
+
+    <div class="wrapper" id="skipCont"></div>
+    <!--/#skipCont-->
+    <section id="fontSize" class="wrapper body-wrapper ">
+        <div class="bg-wrapper inner-wrapper">
+            <div class="breadcam-bg breadcam">
+                <div class="container common-container four_content">
+                    <ul>
+                        <li><a href="home.html">Home </a></li>
+                        <li class="current">/ Add Requirement</li>
+
+                    </ul>
+                </div>
+            </div>
+            <section id="page-head" class="wrapper headings-wrapper">
+                <div class="container common-container four_content">
+                    <h1>Add Requirement</h1>
+                    <hr />
+                </div>
+            </section>
+            <!--/#page-head-->
+            <section id="paragraph" class="wrapper paragraph-wrapper">
+                <div class="container common-container four_content">
+                    <div class="form-container">
+                        <headers>Add Requirement</headers>
+                        <form action="/AdminAddReq" method="POST">
+                     {% csrf_token %}
+
+                            <div class="details">
+                                    <div class="fields">
+                                        <div class="input-field">
+                                            <label>Subject<span class="imp">*</span></label>
+                                            <input type="text" id="Subject" name="Subject" placeholder="Subject" required>
+                                        </div>
+                                        <div class="input-field">
+                                            <label>Reference_Number<span class="imp">*</span></label>
+                                            <input type="text" id="Reference_Number" name="Reference_Number" placeholder="Reference_Number" required>
+                                        </div>
+                                                                                <div class="input-field">
+                                          <label>Identification_No<span class="imp">*</span></label>
+                                          <input type="number" name="Identification_No" placeholder="Identification_No">
+                                       </div>
+
+
+                                        <div class="input-field">
+                                          <label>Budget<span class="imp">*</span></label>
+                                          <input type="number"  name="Budget" placeholder="Budget" required>
+                                       </div>
+
+                                        <div class="input-field">
+                                          <label>Time_Duration<span class="imp">*</span></label>
+                                          <input type="number"  name="Time_Duration" placeholder="Time_Duration" required>
+                                       </div>
+
+                                        <div class="input-field">
+                                              <label>EMD<span class="imp">*</span></label>
+                                          <input type="number"  name="EMD" placeholder="EMD" required>
+                                       </div>
+
+                                        <div class="input-field">
+                                            <label>Eligible_Class<span class="imp">*</span></label>
+                                            <input type="text" id="Eligible_Class" name="Eligible_Class" placeholder="Eligible_Class" required>
+                                        </div>
+
+
+
+                                    </div>
+
+                                    <div class="buttons">
+                                        <input type="reset" value="RESET" class="button">
+                                        <input type="submit" value="ADD TENDER" class="button">
+                                    </div>
+
+
+
+                                    </div>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                </div>
+            </section>
+           {% endblock %}

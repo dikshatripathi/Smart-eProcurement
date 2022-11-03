@@ -1,0 +1,96 @@
+{% extends "A.base.html" %}
+{% block content %}
+{% load static%}
+
+    <div class="wrapper" id="skipCont"></div>
+    <!--/#skipCont-->
+    <section id="fontSize" class="wrapper body-wrapper ">
+        <div class="bg-wrapper inner-wrapper">
+            <div class="breadcam-bg breadcam">
+                <div class="container common-container four_content">
+                    <ul>
+                        <li><a href="home.html">Home </a></li>
+                        <li class="current">/ Add Requirement</li>
+
+                    </ul>
+                </div>
+            </div>
+            <section id="page-head" class="wrapper headings-wrapper">
+                <div class="container common-container four_content">
+                    <h1>Add Requirement</h1>
+                    <hr />
+                </div>
+            </section>
+            <!--/#page-head-->
+            <section id="paragraph" class="wrapper paragraph-wrapper">
+                <div class="container common-container four_content">
+                    <div class="form-container">
+                        <headers>Compare Bids</headers>
+                        <form action="/Compare_Bids" method="POST">
+                     {% csrf_token %}
+
+                            <div class="details">
+                                    <div class="fields">
+                                        <div class="input-field">
+                                            <label>Select Reference Number<span class="imp">*</span></label>
+                                            <select name="sel">
+                                                <option value="0">Price Based</option>
+                                                <option value="1">Quality-cum Cost Based</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="buttons">
+                                        <input type="submit" value="GO!" class="button">
+                                    </div>
+
+
+
+                                    </div>
+                            </div>
+                        </form>
+                    </div>
+                    <br>
+                </div>
+            </section>
+            <section id="tables" class="wrapper tables-wrapper">
+                <div class="container common-container four_content">
+                    <div class="scroller">
+                        <table cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <caption>The latest Requirements are listed here.</caption>
+                                <tr>
+                                    <th align="center" valign="middle">Biddername</th>
+                                    <th align="left" valign="middle">Bid_ID </th>
+                                    <th align="left" valign="middle">Bid_Type </th>
+                                    <th align="left" valign="middle">Bid_Category</th>
+                                    <th align="left" valign="middle">Total_Projects_Worked</th>
+                                    <th align="left" valign="middle">Total_Success_Projects</th>
+                                    <th align="left" valign="middle">Value_of_Last_Project</th>
+                                    <th align="left" valign="middle">Proposed_Cost_of_Project</th>
+                                </tr>
+
+                                {% for x in Etendr %}
+
+                                <tr>
+                                    <td align="center" valign="middle">{{x.Biddername}}</td>
+                                    <td align="left" valign="middle">{{x.Bid_ID}}</td>
+                                    <td align="left" valign="middle">{{x.Bid_Type}}</td>
+                                    <td align="left" valign="middle">{{x.Bid_Category}}</td>
+                                    <td align="left" valign="middle">{{x.Total_Projects_Worked}}</td>
+                                    <td align="left" valign="middle">{{x.Total_Success_Projects}}</td>
+                                    <td align="left" valign="middle">{{x.Value_of_Last_Project}}</td>
+                                    <td align="left" valign="middle">{{x.Proposed_Cost_of_Project}}</td>
+                                </tr>
+                                {% endfor %}
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr />
+                </div>
+            </section>
+            </div>
+        </section>
+           {% endblock %}

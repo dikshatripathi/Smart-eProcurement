@@ -1,0 +1,99 @@
+
+
+body {
+	font-family: Georgia, serif !important;
+	background: none;
+	color: #000 !important;
+	width: 100%;
+	margin: 0; padding: 0;
+}
+.gallery-container {
+   display:none !important;
+}
+.padding-top-bott {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.imp-img-cir ul.ul-v > li,.item-list li {
+	border:1px solid #ccc;
+	margin-bottom:10px;
+}
+.logo-cmf a {
+    border-right: none;
+    padding-right: 0px;
+}
+.resp-tab-content ul.list li{
+    list-style-type: disc;
+    display: list-item;
+    list-style-position: outside;
+    padding-left: 0;
+	margin-left:15px;
+}
+.imp-link ul.ul-v > li {
+    list-style-type: disc;
+    display: inline-block;
+    list-style-position: outside;
+    padding-left: 0;
+}
+.imp-link {
+    border: none;
+}
+
+@media(max-width:800px) {
+	
+.minister {
+    padding: 0px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.left-block {
+    width: 100%;
+}
+.complaint {
+    width: 100%;
+    margin-right: 0px;
+}
+.whats-new-maincontainer {
+    width: 100%;
+    float: left;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+ul.ul-v > li {
+    display: inline-block;
+    padding: .55em 1em;
+    padding-left: 20px;
+    width: 31.333%;
+}
+.imp-link ul.ul-v > li {
+    list-style-type: disc;
+    display: inline-block;
+    list-style-position: outside;
+    padding-left: 0;
+	    width: 30%;
+}
+.resp-tab-content {
+    min-height:inherit;
+}
+.minister-box {
+    padding: 20px;
+    border-bottom: none;
+    max-width: 50%;
+    float: left;
+}
+.item-list li {
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+}
+.imp-img-cir ul.ul-v > li {
+    width: 29%;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.copyright-content {
+    padding: 5px 0px 0px 0;
+}
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static%}
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="format-detection" content="telephone=no" />
+   <meta name="keywords" content="ministry, department">
+   <meta name="description" content="Ministry/Department">
+   <meta name="author" content="National Informatics Center">
+   <link rel="apple-touch-icon" href="{% static 'assets/images/favicon/apple-touch-icon.png'%}">
+   <link rel="icon" href="{% static 'assets/images/favicon/favicon.png'%}">
+   <title>Home | AICTE | eProcurement | GoI</title>
+   <!-- Custom styles for this template -->
+   <link href="{% static 'assets/css/base.css'%}" rel="stylesheet" media="all">
+   <link href="{% static 'assets/css/base-responsive.css'%}" rel="stylesheet" media="all">
+   <link href="{% static 'assets/css/grid.css'%}" rel="stylesheet" media="all">
+   <link href="{% static 'assets/css/font.css'%}" rel="stylesheet" media="all">
+   <link href="{% static 'assets/css/font-awesome.min.css'%}" rel="stylesheet" media="all">
+   <link href="{% static 'assets/css/flexslider.css'%}" rel="stylesheet" media="all">
+   <link href="{% static 'assets/css/megamenu.css'%}" rel="stylesheet" media="all" />
+   <link href="{% static 'assets/css/print.css'%}" rel="stylesheet" media="print" />
+   <link href="{% static 'assets/css/customstyle.css'%}" rel="stylesheet" media="all">
+   <!-- Theme styles for this template -->
+   <link href="{% static 'assets/css/megamenu.css'%}" rel="stylesheet" media="all" />
+   <link href="{% static 'theme/css/site.css'%}" rel="stylesheet" media="all">
+   <link href="{% static 'theme/css/site-responsive.css'%}" rel="stylesheet" media="all">
+   <link href="{% static 'theme/css/ma5gallery.css'%}" rel="stylesheet" type="text/css">
+   <link href="{% static 'theme/css/print.css'%}" rel="stylesheet" type="text/css" media="print">
+   <!-- <link href="theme/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+   <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!--[if lt IE 9]>
+      <script src="{% static 'assets/js/html5shiv.js'%}"></script>
+      <script src="{% static 'assets/js/respond.min.js'%}"></script>
+      <![endif]-->
+   <!-- Custom JS for this template -->
+   <noscript>
+      <link href="{% static 'theme/css/no-js.css'%}" type="text/css" rel="stylesheet">
+   </noscript>
+</head>
+
+<body>
+
+   <div id="fb-root"></div>
+   <header>
+      <div class="region region-header-top">
+         <div id="block-cmf-content-header-region-block" class="block block-cmf-content first last odd">
+            <noscript class="no_scr">"JavaScript is a standard programming language that is included to provide
+               interactive features, Kindly enable Javascript in your browser. For details visit help page"
+            </noscript>
+            <div class="wrapper common-wrapper">
+               <div class="container common-container four_content top-header">
+                  <div class="common-left clearfix">
+                     <ul>
+                        <li class="gov-india"><span class="responsive_go_hindi" lang="hi"><a target="_blank"
+                                 href="https://india.gov.in/hi"
+                                 title="भारत सरकार ( बाहरी वेबसाइट जो एक नई विंडो में खुलती है)" role="link">भारत
+                                 सरकार</a></span><span class="li_eng responsive_go_eng"><a target="_blank"
+                                 href="https://india.gov.in/"
+                                 title="Government of india,External Link that opens in a new window"
+                                 role="link">Government of india</a></span></li>
+                        <li class="ministry">
+                           <a href="https://www.aicte-india.org/" target="_blank" alt="AICTE" title="अखिल भारतीय तकनीकी शिक्षा परिषद / स्मार्ट ई-निविदा"><span
+                                 class="responsive_minis_hi" lang="hi">अखिल भारतीय तकनीकी शिक्षा परिषद / स्मार्ट् ई-प्रापण</span></a>
+                           <a href="https://www.aicte-india.org/" target="_blank" alt="AICTE" title="All India Council for Technical Education / Smart eTender"><span
+                                 class="li_eng responsive_minis_eng">All India Council for Technical Education / Smart eProcurement</span></a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="common-right clearfix">
+                     <ul id="header-nav">
+                        <li class="ico-skip cf"><a href="#skipCont" title="">Skip to main content</a>
+                        </li>
+                        <li class="ico-site-search cf">
+                           <a href="javascript:void(0);" id="toggleSearch" title="Site Search">
+                              <img class="top" src="{% static 'assets/images/ico-site-search.png'%}" alt="Site Search" /></a>
+                           <div class="search-drop both-search">
+                              <div class="google-find">
+                                 <form method="get" action="http://www.google.com/search" target="_blank">
+                                    <label for="search_key_g" class="notdisplay">Search</label>
+                                    <input type="text" name="q" value="" id="search_key_g" />
+                                    <input type="submit" value="Search" class="submit" />
+                                    <div>
+                                       <input type="radio" name="sitesearch" value="" id="the_web" />
+                                       <label for="the_web">The Web</label>
+                                       <input type="radio" name="sitesearch" value="india.gov.in" checked
+                                          id="the_domain" /> <label for="the_domain"> INDIA.GOV.IN</label>
+                                    </div>
+                                 </form>
+                              </div>
+                              <div class="find">
+                                 <form name="searchForm" action="">
+                                    <label for="search_key" class="notdisplay">Search</label>
+                                    <input type="text" name="search_key" id="search_key" onKeyUp="autoComplete()"
+                                       autocomplete="off" required />
+                                    <input type="submit" value="Search" class="bttn-search" />
+                                 </form>
+                                 <div id="auto_suggesion"></div>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="ico-accessibility cf">
+                           <a href="javascript:void(0);" id="toggleAccessibility" title="Accessibility Dropdown"
+                              role="link">
+                              <img class="top" src="{% static 'assets/images/ico-accessibility.png'%}" alt="Accessibility Dropdown" />
+                           </a>
+                           <ul>
+                              <li> <a onClick="set_font_size(&#39;increase&#39;)" title="Increase font size"
+                                    href="javascript:void(0);" role="link">A<sup>+</sup></a> </li>
+                              <li> <a onClick="set_font_size()" title="Reset font size" href="javascript:void(0);"
+                                    role="link">A<sup>&nbsp;</sup></a> </li>
+                              <li> <a onClick="set_font_size(&#39;decrease&#39;)" title="Decrease font size"
+                                    href="javascript:void(0);" role="link">A<sup>-</sup></a> </li>
+                              <li> <a href="javascript:void(0);" class="high-contrast dark" title="High Contrast"
+                                    role="link">A</a> </li>
+                              <li> <a href="javascript:void(0);" class="high-contrast light" title="Normal Contrast"
+                                    style="display: none;" role="link">A</a> </li>
+                           </ul>
+                        </li>
+                        <li class="ico-social cf">
+                           <a href="javascript:void(0);" id="toggleSocial" title="Social Medias">
+                              <img class="top" src="{% static 'assets/images/ico-social.png'%}" alt="Social Medias" /></a>
+                           <ul>
+                              <li><a target="_blank" title="External Link that opens in a new window"
+                                    href="http://www.facebook.com/"><img alt="Facebook Page"
+                                       src="{% static 'assets/images/ico-facebook.png'%}"></a></li>
+                              <li><a target="_blank" title="External Link that opens in a new window"
+                                    href="http://www.twitter.com/"><img alt="Twitter Page"
+                                       src="{% static 'assets/images/ico-twitter.png'%}"></a></li>
+                              <li><a target="_blank" title="External Link that opens in a new window"
+                                    href="http://www.youtube.com/"><img alt="youtube Page"
+                                       src="{% static 'assets/images/ico-youtube.png'%}"></a></li>
+                           </ul>
+                        </li>
+                        <li class="ico-sitemap cf"><a href="" title="Sitemap">
+                              <img class="top" src="{% static 'assets/images/ico-sitemap.png'%}" alt="Sitemap" /></a>
+                        </li>
+                        <li class="hindi cmf_lan d-hide">
+                           <label class="de-lag"><span style="display: none;">Language</span>
+                              <select title="Select Language">
+                                 <option>English</option>
+                                 <option>हिन्दी</option>
+                              </select>
+                           </label>
+                        </li>
+                        <li class="hindi cmf_lan m-hide">
+                           <a href="javascript:;" title="Select Language">Language</a>
+                           <ul>
+                              <li><a target="_blank" href="" lang="hi" class="alink"
+                                    title="Click here for हिन्दी version.">हिन्दी</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p id="scroll" style="display: none;"><span></span></p>
+      </div>
+      <!--Top-Header Section end-->
+
+      <section class="wrapper header-wrapper">
+         <div class="container common-container four_content header-container">
+            <h1 class="logo">
+               <img class="" src="{% static 'assets/images/aicte_logo.png'%}" alt="national emblem">
+               <img class="" src="{% static 'assets/images/set-logo.png'%}" alt="national emblem">
+               <span class="department-title">
+                  <em> <a href="/" title="Home" rel="home" class="header__logo" id="logo"><span>स्मार्ट ई-प्रापण</span></a></em>
+                  <em>
+                     <a href="/" title="Home" rel="home" class="header__logo" id="logo">
+                        <span>Smart eProcurement</span>
+                     </a>
+                  </em>
+               </span>
+            </h1>
+            <div class="header-right clearfix">
+               <div class="right-content clearfix">
+                  <div class="float-element">
+                     <a class="am-logo" target="_blank" href="https://amritmahotsav.nic.in/"
+                        title="Swachh Bharat, External link that opens in a new windows">
+                        <img src="{% static 'assets/images/amrit-mahotsav.png'%}" alt="Amrit Mahotsav">
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--/.header-wrapper-->
+      <section class="wrapper megamenu-wraper">
+         <h2 style="display: none;">Megamenu</h2>
+         <div class="container common-container four_content header-nav">
+            <p class="showhide" id="showhide"><em></em><em></em><em></em></p>
+            <nav class="main-menu clearfix main-menu1" id="main_menu">
+               <ul class="nav-menu">
+                  <li> <a href="/" class="home"><span>Home</span><i class="fa fa-home"></i></a> </li>
+                  <li>
+                     <a href="/Compare_Bids">Compare_Bids</a>
+                                       </li>
+                  <li><a href="/AdminShowUser">View Users</a>
+
+                  </li>
+
+                  <li><a href="/AdminAddReq">Add Requirements</a>
+
+                  </li>
+
+                  <li>
+                     <a href="/AdminReq">Show Requirements</a>
+
+                  </li>
+
+                  <li><a href="/">Logout</a>
+
+                  </li>
+
+
+
+
+               </ul>
+            </nav>
+            <nav class="main-menu clearfix" id="overflow_menu">
+               <ul class="nav-menu clearfix">
+               </ul>
+            </nav>
+         </div>
+      </section>
+   </header>
+
+{% block content %}
+
+   {% endblock %}
+    <!--/.banner-wrapper-->
+   <section class="wrapper carousel-wrapper">
+      <h2 style="display: none;">Carousel</h2>
+      <div class="container common-container four_content carousel-container">
+         <div id="flexCarousel" class="flexslider carousel">
+            <ul class="slides">
+               <li><a target="_blank" href="http://digitalindia.gov.in/"
+                     title="Digital India, External Link that opens in a new window"><img
+                        src="{% static 'assets/images/carousel/digital-india.png'%}" alt="Digital India"></a></li>
+               <li><a target="_blank" href="http://www.makeinindia.com/"
+                     title="Make In India, External Link that opens in a new window"> <img
+                        src="{% static 'assets/images/carousel/makeinindia.png'%}" alt="Make In India"></a></li>
+               <li><a target="_blank" href="http://india.gov.in/"
+                     title="National Portal of India, External Link that opens in a new window"><img
+                        src="{% static 'assets/images/carousel/india-gov.png'%}" alt="National Portal of India"></a></li>
+               <li><a target="_blank" href="http://goidirectory.nic.in/"
+                     title="GOI Web Directory, External Link that opens in a new window"><img
+                        src="{% static 'assets/images/carousel/goidirectory.png'%}" alt="GOI Web Directory"></a></li>
+               <li><a target="_blank" href="https://data.gov.in/"
+                     title="Data portal, External Link that opens in a new window"><img
+                        src="{% static 'assets/images/carousel/data-gov.png'%}" alt="Data portal"></a></li>
+               <li><a target="_blank" href="https://mygov.in/"
+                     title="MyGov, External Link that opens in a new window"><img src="{% static 'assets/images/carousel/mygov.png'%}"
+                        alt="MyGov Portal"></a></li>
+            </ul>
+         </div>
+      </div>
+   </section>
+
+   <!--/.carousel-wrapper-->
+   <footer class="wrapper footer-wrapper">
+      <div class="footer-top-wrapper">
+         <div class="container common-container four_content footer-top-container">
+            <ul>
+               <li><a href="#">Feedback</a></li>
+               <li><a href="#">Website Policies </a></li>
+               <li><a href="#">Contact Us</a></li>
+               <li><a href="#">Web Information Manager </a></li>
+               <li><a href="#">FAQ’s</a></li>
+               <li><a href="#">Disclaimer</a></li>
+               <li><a href="#">Help</a></li>
+               <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="footer-bottom-wrapper">
+         <div class="container common-container four_content footer-bottom-container">
+            <div class="footer-content clearfix">
+               <div class="copyright-content">
+                  Website Content Managed by <strong>Procurement Policy Division, Dept. of Expenditure, Ministry of
+                     Finance, <a target="_blank" title="GoI, External Link that opens in a new window"
+                        href="https://www.india.gov.in/"><strong>Government of India</strong></a></strong>
+                  <span>Designed, Developed and Hosted by <a target="_blank"
+                        title="HEXOCRATS, External Link that opens in a new window" href="#"><strong>Hexcrats Software
+                           Solution</strong></a><strong> (HEXOCRATS)</strong></span>
+                  <span class="last-updated">Last Updated: <span id="lastupdated"></span></span>
+               </div>
+
+               <div class="logo-cmf"> <a target="_blank" title="External link that opens in new tab, cmf"
+                     href="http://cmf.gov.in/"><img alt="cmf logo" src="{% static 'assets/images/cmf-logo.png'%}"></a> </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!--/.footer-wrapper-->
+   <script src="{% static 'assets/js/jquery-2.1.1.min.js'%}"></script>
+   <script src="{% static 'assets/js/jquery-accessibleMegaMenu.js'%}"></script>
+   <script src="{% static 'assets/js/framework.js'%}"></script>
+   <script src="{% static 'assets/js/jquery.flexslider.js'%}"></script>
+   <script src="{% static 'assets/js/font-size.js'%}"></script>
+   <script src="{% static 'assets/js/swithcer.js'%}"></script>
+   <script src="{% static 'theme/js/ma5gallery.js'%}"></script>
+   <script src="{% static 'assets/js/megamenu.js'%}"></script>
+   <script src="{% static 'theme/js/easyResponsiveTabs.js'%}"></script>
+   <script src="{% static 'theme/js/custom.js'%}"></script>
+   <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+   <script>
+      var d = new Date();
+      var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      document.getElementById("lastupdated").innerHTML = months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+   </script>
+
+   <script>
+      $(document).ready(function () {
+
+      });
+   </script>
+</body>
+
+</html>

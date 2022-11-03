@@ -1,0 +1,50 @@
+{% extends "A.base.html" %}
+{% block content %}
+{% load static%}
+<div class="wrapper" id="skipCont"></div>
+    <!--/#skipCont-->
+    <section id="fontSize" class="wrapper body-wrapper ">
+        <div class="bg-wrapper inner-wrapper">
+            <div class="breadcam-bg breadcam">
+                <div class="container common-container four_content">
+                    <ul>
+                        <li><a href="home.html">Home </a></li>
+                        <li class="current">/ Requirement</li>
+                    </ul>
+                </div>
+            </div>
+
+            <section id="tables" class="wrapper tables-wrapper">
+                <div class="container common-container four_content">
+                    <div class="scroller">
+                        <table cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <caption>The latest Requirements are listed here.</caption>
+                                <tr>
+                                    <th align="center" valign="middle">Name</th>
+                                    <th align="left" valign="middle">Company</th>
+                                    <th align="left" valign="middle">Email</th>
+                                    <th align="left" valign="middle">Mobile</th>
+
+                                </tr>
+
+                                {% for x in User_Count %}
+
+                                <tr>
+                                    <td align="center" valign="middle">{{x.Name}}</td>
+                                    <td align="left" valign="middle">{{x.Company_Name}}</td>
+                                    <td align="left" valign="middle">{{x.Email}}</td>
+                                    <td align="left" valign="middle">{{x.Bidder_Mobile}}</td>
+
+                                </tr>
+                                {% endfor %}
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr />
+                </div>
+            </section>
+
+
+  {% endblock %}

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static%}
+    <!--/.nav-wrapper-->
+
+    <section class="wrapper banner-wrapper">
+        <div id="flexSlider" class="flexslider">
+            <div class="inner-banner"><img src="{% static 'theme/images/banner/inner-banner.png'%}"
+                    alt="Inner Banner of Consumer Affairs" title="banner"></div>
+        </div>
+    </section>
+    <div class="wrapper" id="skipCont"></div>
+    <!--/#skipCont-->
+    <section id="fontSize" class="wrapper body-wrapper ">
+        <div class="bg-wrapper inner-wrapper">
+            <div class="breadcam-bg breadcam">
+                <div class="container common-container four_content">
+                    <ul>
+                        <li><a href="home.html">Home </a></li>
+                        <li class="current">/ Requirement</li>
+                    </ul>
+                </div>
+            </div>
+
+            <section id="tables" class="wrapper tables-wrapper">
+                <div class="container common-container four_content">
+                    <div class="scroller">
+                        <table cellspacing="0" cellpadding="0">
+                            <tbody>
+                                <caption>The latest Requirements are listed here.</caption>
+                                <tr>
+                                    <th align="center" valign="middle">Subject</th>
+                                    <th align="left" valign="middle">Reference Number</th>
+                                    <th align="left" valign="middle">Identification Number</th>
+                                    <th align="left" valign="middle">Budget</th>
+                                    <th align="left" valign="middle">Time Duration</th>
+                                    <th align="left" valign="middle">EMD %</th>
+                                </tr>
+
+                                {% for x in Tender %}
+
+                                <tr>
+                                    <td align="center" valign="middle">{{x.Subject}}</td>
+                                    <td align="left" valign="middle">{{x.Reference_Number}}</td>
+                                    <td align="left" valign="middle">{{x.Identification_No}}</td>
+                                    <td align="left" valign="middle">{{x.Budget}}</td>
+                                    <td align="left" valign="middle">{{x.Time_Duration}}</td>
+                                    <td align="left" valign="middle">{{x.EMD}}</td>
+                                </tr>
+                                {% endfor %}
+                                <tr>
+                                    <td colspan="7" align="center" valign="middle" style="text-align: center;"> <a href="/filetender">Apply</a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr />
+                </div>
+            </section>
+        </div>
+    </section>
+
+{% endblock %}
